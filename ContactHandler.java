@@ -54,18 +54,20 @@ public class ContactHandler {
     }
 
     public boolean updateContact() {
-        int vtri = -9;
-        while (vtri==-9)
+        int vtri = -1;
+        while (vtri == -1)
         {
-            System.out.print("Enter contact need to edit: ");
+            System.out.print("Enter name contact need to edit: ");
             String name =  scanner.nextLine();
             for (int i=0 ; i< contacts.size(); i++)
             {
                 if (contacts.get(i).getName().equalsIgnoreCase(name))
                     vtri = i;
             }
-            if (vtri==-9)
+            if (vtri == -1){
                 System.out.println("Contact not exist, check again");
+            }
+                
         }
 
         System.out.print("Enter contact need to edit");

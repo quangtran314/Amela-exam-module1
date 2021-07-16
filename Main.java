@@ -68,7 +68,7 @@ public class Main {
         System.out.println("\n\n--Contacts management--");
         System.out.println("1. List");
         System.out.println("2. Add new");
-        System.out.println("3. Sync");
+        System.out.println("3. Edit");
         System.out.println("4. Delete");
         System.out.println("5. Search");
         System.out.println("6. Exit");
